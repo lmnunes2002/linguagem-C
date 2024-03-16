@@ -2,13 +2,13 @@
 
 int main(){
 	
-	//Declarando variáveis.
+	//Declarando variÃ¡veis.
 	char nome[200]; //Cadeia
 	char sexo; // Caracter
 	int idade; // Inteiro
 	float peso; // Real
 	
-	//Definição variáveis.
+	//DefiniÃ§Ã£o variÃ¡veis.
 	printf("Digite seu nome: ");
 	scanf("%s",&nome);
 	
@@ -21,9 +21,9 @@ int main(){
 	scanf("%i",&idade);
 	
 	printf("Digite seu peso: ");
-	scanf("%f", &peso);
+	scanf("%f",&peso);
 	
-	//Exibindo variáveis.
+	//Exibindo variÃ¡veis.
 	printf("\n=== Exibindo resultados ===\n");
 	printf("Nome: %s \n", nome); // %s -> cadeia -> string
 	printf("Sexo: %c \n", sexo); // %c -> caracter -> character
