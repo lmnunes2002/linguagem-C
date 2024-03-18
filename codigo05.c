@@ -3,12 +3,12 @@
 
 int main(){
 
-//DeclaraÁ„o de vari·veis.
+//Declara√ß√£o de vari√°veis.
 char nome[50];
 int idade;
 float notaUm, notaDois, notaTres, notaQuatro;
 
-//DefiniÁ„o de vari·veis.
+//Defini√ß√£o de vari√°veis.
 printf("Digite o nome do aluno: ");
 scanf("%s",&nome);
 printf("Digite a idade do aluno: ");
@@ -21,8 +21,10 @@ system("cls");
 //Calculadora.
 float media = (notaUm + notaDois + notaTres + notaQuatro) / 4;
 
-//Exibindo vari·veis.
+//Exibindo vari√°veis.
 printf("Nome do aluno: %s", nome);
 printf("\nIdade do aluno: %i anos", idade);
 printf("\nMedia do aluno: %f", media);
+
+returno 0;
 }
