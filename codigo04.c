@@ -26,5 +26,6 @@ int main(){
 	printf("Valor da subtração: %i.\n", Subtracao);
 	printf("Valor da multiplicação: %i.\n", Multiplicacao);
 	printf("Valor da divisão: %i.\n", Divisao);
+	
 	return 0;
 }
