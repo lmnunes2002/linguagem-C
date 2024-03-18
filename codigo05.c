@@ -2,7 +2,6 @@
 #include <stdlib.h>
 
 int main(){
-
 //Declaração de variáveis.
 char nome[50];
 int idade;
