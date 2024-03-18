@@ -1,11 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <locale.h>
 
 int main(){
-	//DeclaraÁ„o de vari·veis.
+	//Linguagem.
+	setlocale(LC_ALL, "portuguese");
+	
+	//Declara√ß√£o de vari√°veis.
 	int numeroUm, numeroDois;
 	
-	//DefiniÁ„o de vari·veis.
+	//Defini√ß√£o de vari√°veis.
 	printf("Digite aqui suas variaveis: \n");
 	scanf("%i %i", &numeroUm, &numeroDois);
 	system("cls");
@@ -19,7 +23,8 @@ int main(){
 	//Display.
 	
 	printf("Valor da soma: %i.\n", Soma);
-	printf("Valor da subtracao: %i.\n", Subtracao);
-	printf("Valor da multiplicacao: %i.\n", Multiplicacao);
-	printf("Valor da divisao: %i.\n", Divisao);
+	printf("Valor da subtra√ß√£o: %i.\n", Subtracao);
+	printf("Valor da multiplica√ß√£o: %i.\n", Multiplicacao);
+	printf("Valor da divis√£o: %i.\n", Divisao);
+	return 0;
 }
