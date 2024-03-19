@@ -21,7 +21,7 @@ int main(){
 	//Calculadora.
 	soma = numeroUm + numeroDois;
 	produto = numeroUm * numeroDois;
-	media = (numeroUm + numeroDois) / float 2;
+	media = (numeroUm + numeroDois) / 2.0;
 
 	//Exibindo variáveis.
 	printf("Variável um: %i", numeroUm);
