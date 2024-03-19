@@ -6,12 +6,12 @@ int main(){
 //Linguagem.
 setlocale(LC_ALL, "Portuguese");
 
-//Declaração de variáveis.
+//DeclaraÃ§Ã£o de variÃ¡veis.
 char nome[50];
 int idade;
 float notaUm, notaDois, notaTres;
 
-//Definição de variáveis.
+//DefiniÃ§Ã£o de variÃ¡veis.
 printf("Digite o nome do aluno: ");
 scanf("%s",&nome);
 printf("Digite a idade do aluno: ");
@@ -24,16 +24,18 @@ system("cls");
 //Calculadora.
 float media = (notaUm + notaDois + notaTres) / 3;
 
-//Exibindo variáveis.
+//Exibindo variÃ¡veis.
 printf("Nome do aluno: %s", nome);
 printf("\nIdade do aluno: %i anos", idade);
 printf("\nMedia do aluno: %f", media);
 
 //Condicional.
-if (media >= 7.0){
-	printf("Parabéns, você foi aprovado(a)");
+if (media >= 7.0 && media <= 10.0){
+	printf("ParabÃ©ns, vocÃª foi aprovado(a)");
+} if else (media >= 0.0 && media < 7.0) {
+	printf("VocÃª foi reprovado(a)");
 } else {
-	printf("Você foi reprovado(a)");
+	printf("Digite um valor de nota vÃ¡lido");
 }
 
 return 0;
