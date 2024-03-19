@@ -34,7 +34,7 @@ printf("\nMedia do aluno: %.1f", media);
 //Condicional.
 if (media >= 7.0 && media <= 10.0){
 	printf("Parabéns, você foi aprovado(a)");
-} if else (media >= 0.0 && media < 7.0) {
+} else if (media >= 0.0 && media < 7.0) {
 	printf("Você foi reprovado(a)");
 } else {
 	printf("Digite um valor de nota válido");
