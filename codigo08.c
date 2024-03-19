@@ -17,17 +17,19 @@ scanf("%s",&nome);
 printf("Digite a idade do aluno: ");
 scanf("%i",&idade);
 printf("Digite as notas do aluno: ");
-scanf("%f %f %f", &notaUm, &notaDois, &notaTres);
+scanf("%.1f %.1f %.1f", &notaUm, &notaDois, &notaTres);
 
 system("cls");
 
 //Calculadora.
 float media = (notaUm + notaDois + notaTres) / 3;
+float soma = notaUm + notaDois + notaTres;
 
 //Exibindo variáveis.
 printf("Nome do aluno: %s", nome);
 printf("\nIdade do aluno: %i anos", idade);
-printf("\nMedia do aluno: %f", media);
+printf("\nSoma das notas: %.1f", soma);
+printf("\nMedia do aluno: %.1f", media);
 
 //Condicional.
 if (media >= 7.0 && media <= 10.0){
