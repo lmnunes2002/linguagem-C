@@ -7,17 +7,17 @@ int main(){
 	//Linguagem.
 	setlocale(LC_ALL, "portuguese");
 	
-	//DefiniÁ„o de vari·veis.
+	//Defini√ß√£o de vari√°veis.
 	char sexo;
 	float altura, pesoIdeal;
 	
-	//DefiniÁ„o de vari·veis.
+	//Defini√ß√£o de vari√°veis.
 	printf("Digite aqui seu sexo (M ou F): ");
 	scanf("%c", &sexo);
 	printf("Digite aqui sua altura: ");
 	scanf("%f", &altura);
 	
-	//Converte em mai˙sculo.
+	//Converte em mai√∫sculo.
 	sexo = toupper(sexo);
 	
 	system("cls");
@@ -26,14 +26,14 @@ int main(){
 	switch (sexo){
 		case 'M':
 			pesoIdeal = (72.7 * altura) - 58;
-			printf("Seu peso ideal È %f", pesoIdeal);
+			printf("Seu peso ideal √© %.2f", pesoIdeal);
 			break;
 		case 'F':
 			pesoIdeal = (62.1 * altura) - 44.7;
-			printf("Seu peso ideal È %f", pesoIdeal);
+			printf("Seu peso ideal √© %.2f", pesoIdeal);
 			break;
 		default:
-			printf("Digite uma altura v·lida");
+			printf("Digite uma altura v√°lida");
 	}
 	
 	return 0;
