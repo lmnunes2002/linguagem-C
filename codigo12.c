@@ -6,19 +6,19 @@ int main(){
 	//Linguagem.
 	setlocale(LC_ALL, "portuguese");
 
-	//DefiniÁ„o de vari·veis.
+	//Defini√ß√£o de vari√°veis.
 	int dividendo, resto;
 
-	//DeclaraÁ„o de vari·vel.
-	printf("Digite aqui sua vari·vel: ");
+	//Declara√ß√£o de vari√°vel.
+	printf("Digite aqui sua vari√°vel: ");
 	scanf("%i", dividendo);
 
 	//Calculadora.
 	resto = dividendo % 2;
-	if (resto = 0){
-		printf("O n˙mero È par");
-	} else if (resto = 1) {
-		printf("O n˙mero È Ìmpar");
+	if (resto == 0){
+		printf("O n√∫mero √© par");
+	} else if (resto == 1) {
+		printf("O n√∫mero √© √≠mpar");
 	} else {
  		printf("Digite um valor inteiro");
  	}
