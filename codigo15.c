@@ -1,34 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <locale.h>
 #include <string.h>
 
 int main(){
-	//Linguagem.
-	setlocale(LC_ALL, "portuguese");
-	
-	//Definição de variáveis.
+	//DefiniÃ§Ã£o de variÃ¡veis.
 	char nomeAluno[50], aprovacao[50];
 	char conceito;
 	float notaUm, notaDois, media;
 	
-	//Declaraçaõ de variáveis.
+	//DeclaraÃ§aÃµ de variÃ¡veis.
 	printf("Digite aqui o nome do aluno: ");
 	fgets(nomeAluno, 50, stdin);
+
+	fflush(stdin);
 	
 	printf("Digite aqui a primeira nota: ");
 	scanf("%f", &notaUm);
-	
 	printf("Digite aqui a segunda nota: ");
 	scanf("%f", &notaDois);
-	
-	system("cls");
 	
 	//Calculadora.
 	media = (notaUm + notaDois) / 2;
 	
 	//Condicional.
-	if (media >= 9){
+	if (media >= 9.0){
 		strcpy (aprovacao, "Aprovado(a)");
 		conceito = 'A';
 	} else if(media <= 7.5 && media < 9){
@@ -44,15 +39,15 @@ int main(){
 		strcpy (aprovacao, "Reprovado(a)");
 		conceito = 'E';
 	} else {
-		printf("Média inválida");
+		printf("MÃ©dia invÃ¡lida");
 	}
 	
-	//Exibindo variáveis.
+	//Exibindo variÃ¡veis.
 	printf("Nome do aluno: %s", nomeAluno);
 	printf("\nNota um: %f", notaUm);
 	printf("\nNota dois: %f", notaDois);
-	printf("\nMédia: %f", media);
-	printf("\nAprovação: %s", aprovacao);
+	printf("\nMÃ©dia: %f", media);
+	printf("\nAprovaÃ§Ã£o: %s", aprovacao);
 	printf("\nConceito: %c", conceito);
 	
 	return 0;
