@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-#include <string.h>
+#include <ctype.h>
 
 int main(){
 	//Linguagem.
@@ -16,6 +16,9 @@ int main(){
 	scanf("%c", &sexo);
 	printf("Digite aqui sua altura: ");
 	scanf("%f", &altura);
+	
+	//Converte em maiúsculo.
+	sexo = toupper(sexo);
 	
 	system("cls");
 	
