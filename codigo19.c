@@ -2,12 +2,12 @@
 #include <stdlib.h>
 
 int main(){
-	int i, j;
+	int numero, i;
 	
 	printf("Digite a tabuada desejada: ");
-	scanf("%i", &i);
+	scanf("%i", &numero);
 	
 	for(j = 1; j <= 10; j++){
-		printf("%i x %i = %i\n", i, j, i * j);
+		printf("%i x %i = %i\n", numero, i, numero * i);
 	}
 }
