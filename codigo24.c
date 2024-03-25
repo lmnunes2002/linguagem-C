@@ -8,7 +8,7 @@ int main(){
 	float nota, soma, media;
 	
 	for(i = 1; i <= 4; i++){
-		printf("Digite aqui a %iª nota: ", i);
+		printf("Digite aqui a %iÂª nota: ", i);
 		scanf("%f", &nota);
 		
 		soma += nota;
@@ -17,6 +17,6 @@ int main(){
 	system("cls");
 	media = soma / 4;
 	
-	printf("Média final: %f", media);
+	printf("MÃ©dia final: %.2f", media);
 	return 0;
 }
