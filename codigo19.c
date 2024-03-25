@@ -7,7 +7,7 @@ int main(){
 	printf("Digite a tabuada desejada: ");
 	scanf("%i", &numero);
 	
-	for(j = 1; j <= 10; j++){
+	for(i = 1; i <= 10; i++){
 		printf("%i x %i = %i\n", numero, i, numero * i);
 	}
 }
