@@ -9,7 +9,7 @@ int main(){
 		contador = contador++;
 		
 		printf("Tecle 's' se deseja continuar\n");
-		scanf("%c", continua);
+		scanf("%c", &continua);
 		setbuf(stdin, 0);
 	} while (continua == 's');
 	
