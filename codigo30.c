@@ -4,30 +4,44 @@
 #include <string.h>
 
 int main(){
+	//Linguagem.
 	setlocale(LC_ALL, "portuguese");
 	
+	//Declarando variÃ¡veis.
 	float notaUm, notaDois, media, nota, somaNota = 0.0, contador = 0.0;
 	char resposta;
+	int i, numeroNotas = 0;
 	
+	//Definindo variÃ¡veis.
 	printf("Digite a primeira nota: ");
-	scanf("%f", &notaUm);
+	scanf(" %f", &notaUm);
 	
 	printf("Digite a segunda nota: ");
-	scanf("%f", &notaDois);
+	scanf(" %f", &notaDois);
 	
-	do{
-		printf("Você deseja inserir mais notas: ");
-		scanf ("%c", &resposta);
-		somaNota += nota;
-		contador + 1.0;
-	} while (resposta == 'n');
+	fflush(stdin);
 	
-	media = (notaUm + notaDois + somaNota) / 2.0 + contador;
+	printf("VocÃª deseja inserir mais notas (s ou n)? ");
+	scanf(" %c", &resposta);
+	
+	if (resposta == 's'){
+		printf("Quantas notas vc deseja inserir: ");
+		scanf(" %i", &numeroNotas);
+		for(i = 1; i <= numeroNotas; i++){
+			printf("Digite sua nota extra: ");
+			scanf(" %f", &nota);
+			somaNota += nota;
+		} 
+	} else {
+		printf("Prosseguindo...\n");
+	}
+	
+	media = (notaUm + notaDois + somaNota) / (2.0 + numeroNotas);
 	
 	//Exibindo resultados.
 	printf("\n=== Resultados ===");
-	printf("\nMédia aritmética: %.2f", media);
-	printf("\nQuantidade de notas extras: %.f", contador);
+	printf("\nMÃ©dia aritmÃ©tica: %.2f", media);
+	printf("\nQuantidade de notas extras: %i", numeroNotas);
 	
 	return 0;
 }
