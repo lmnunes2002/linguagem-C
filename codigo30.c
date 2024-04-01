@@ -39,7 +39,7 @@ int main(){
 	media = (notaUm + notaDois + somaNota) / (2.0 + numeroNotas);
 	
 	//Exibindo resultados.
-	printf("\n=== Resultados ===");
+	printf("\n===== Resultados =====");
 	printf("\nMédia aritmética: %.2f", media);
 	printf("\nQuantidade de notas extras: %i", numeroNotas);
 	
