@@ -14,22 +14,22 @@ int main(){
 	
 	//Definindo variáveis.
 	printf("Digite a primeira nota: ");
-	scanf(" %f", &notaUm);
+	scanf("%f", &notaUm);
 	
 	printf("Digite a segunda nota: ");
-	scanf(" %f", &notaDois);
+	scanf("%f", &notaDois);
 	
 	fflush(stdin);
 	
 	printf("Você deseja inserir mais notas (s ou n)? ");
-	scanf(" %c", &resposta);
+	scanf("%c", &resposta);
 	
 	if (resposta == 's'){
 		printf("Quantas notas vc deseja inserir: ");
 		scanf(" %i", &numeroNotas);
 		for(i = 1; i <= numeroNotas; i++){
 			printf("Digite sua nota extra: ");
-			scanf(" %f", &nota);
+			scanf("%f", &nota);
 			somaNota += nota;
 		} 
 	} else {
@@ -41,7 +41,7 @@ int main(){
 	//Exibindo resultados.
 	printf("\n===== Resultados =====");
 	printf("\nMédia aritmética: %.2f", media);
-	printf("\nQuantidade de notas extras: %i", numeroNotas);
+	printf("\nNotas extras: %i", numeroNotas);
 	
 	return 0;
 }
