@@ -7,7 +7,7 @@
 int main(){
 	setlocale(LC_ALL,"portuguese");
 	
-	int codigo, idade, habitantes, mulherSalario, maiorNumero = INT_MIN, menorNumero = INT_MAX;
+	int codigo, idade, habitantes, mulherSalario = 0, maiorNumero = INT_MIN, menorNumero = INT_MAX;
 	float salario, mediaGrupo, somaSalario;
 	char sexo;
 	
@@ -16,16 +16,20 @@ int main(){
 	printf("   2   | Exibir resultados e sair\n");
 	printf("\nEscolha seu código: ");
 	scanf("%i", &codigo);
-	
+
 	if(codigo != 1 && codigo != 2){
-		printf("Digite um código válido: \n");
+		printf("\nDigite um código válido: ");
 		scanf("%i", &codigo);
-	} 
+	}
 	
-	system("cls");
-	fflush(stdin);
+	if(codigo == 2){
+		printf("Encerrando sistema...\n");
+	}
 	
-	do{
+	while(codigo == 1){
+		system("cls");
+		fflush(stdin);
+		
 		printf("Digite seu sexo (M ou F): ");
 		scanf("%c", &sexo);
 		sexo = toupper(sexo);
@@ -41,13 +45,15 @@ int main(){
 		
 		if(idade > maiorNumero){
 			maiorNumero = idade;
+		} else if(idade == 0){
+			maiorNumero = 0;
 		}
 		
 		if(idade < menorNumero){
 			menorNumero = idade;
 		}
-		
-		if(sexo == 'F' && salario > 5.000){
+
+		if(sexo == 'F' && salario >= 5.000){
 			mulherSalario++;
 		}
 		
@@ -55,8 +61,7 @@ int main(){
 		
 		printf("Escolha seu código: ");
 		scanf("%i", &codigo);
-	} while (codigo == 1);
-	
+	}
 	
 	printf("\n===== Exibindo Resultados =====");
 	printf("\nMédia de sálario do grupo: %.2f", mediaGrupo);
