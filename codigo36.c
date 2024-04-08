@@ -11,14 +11,14 @@ int main(){
 	float salario, mediaGrupo, somaSalario;
 	char sexo;
 	
-	printf("Código |  Descrição\n");
+	printf("CÃ³digo |  DescriÃ§Ã£o\n");
 	printf("   1   | Adicionar pessoa\n");
 	printf("   2   | Exibir resultados e sair\n");
-	printf("\nEscolha seu código: ");
+	printf("\nEscolha seu cÃ³digo: ");
 	scanf("%i", &codigo);
 
 	if(codigo != 1 && codigo != 2){
-		printf("\nDigite um código válido: ");
+		printf("\nDigite um cÃ³digo vÃ¡lido: ");
 		scanf("%i", &codigo);
 	}
 	
@@ -37,7 +37,7 @@ int main(){
 		printf("Digite sua idade: ");
 		scanf("%i", &idade);
 	
-		printf("Digite seu salário: ");
+		printf("Digite seu salÃ¡rio: ");
 		scanf("%f", &salario);
 		
 		somaSalario += salario;
@@ -45,8 +45,6 @@ int main(){
 		
 		if(idade > maiorNumero){
 			maiorNumero = idade;
-		} else if(idade == 0){
-			maiorNumero = 0;
 		}
 		
 		if(idade < menorNumero){
@@ -59,15 +57,20 @@ int main(){
 		
 		mediaGrupo = somaSalario / (float) habitantes;
 		
-		printf("Escolha seu código: ");
+		printf("Escolha seu cÃ³digo: ");
 		scanf("%i", &codigo);
+	}
+
+	if(idade == 0){
+		menorNumero = 0;
+		maiorNumero = 0;
 	}
 	
 	printf("\n===== Exibindo Resultados =====");
-	printf("\nMédia de sálario do grupo: %.2f", mediaGrupo);
+	printf("\nMÃ©dia de sÃ¡lario do grupo: %.2f", mediaGrupo);
 	printf("\nMaior idade do grupo: %i", maiorNumero);
 	printf("\nMenor idade do grupo: %i", menorNumero);
-	printf("\nMulheres com salário alto: %i", mulherSalario);
+	printf("\nMulheres com salÃ¡rio alto: %i", mulherSalario);
 	
 	return 0;
 }
