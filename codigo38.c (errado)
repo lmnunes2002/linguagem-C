@@ -1,3 +1,4 @@
+//ERRADO.
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -13,7 +14,7 @@ int main(){
 	scanf("%s", &login);
 	
 	printf("Digite aqui sua senha: ");
-	scanf("%s", &login);
+	scanf("%s", &senha);
 	
 	system("cls");
 	
@@ -52,4 +53,64 @@ int main(){
 	}
 	
 	return 0;
+}
+
+//CERTO.
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <locale.h>
+
+int main(){
+//Linguagem
+setlocale("LC_ALL", "portuguese");
+
+//Declaração de variáveis.
+char login[50], senha[50];
+char loginVerificacao[50], senhaVerificacao[50];
+
+//Cadastro.
+printf("Cadastre aqui seu login: ");
+scanf("%s", login);
+printf("Cadaste aqui sua senha: ");
+scanf("%s", senha);
+
+system("cls");
+
+//Login.
+printf("Digite seu login: ");
+scanf("%s", loginVerificacao);
+
+printf("Digite sua senha: ");
+scanf("%s", senhaVerificacao);
+
+system("cls");
+
+if (strcmp(login, loginVerificacao) == 0 && strcmp(senha, senhaVerificacao) == 0){
+	printf("Bem vindo!");
+} 
+
+while(strcmp(login, loginVerificacao) != 0 || strcmp(senha, senhaVerificacao) != 0){
+		printf("Digite aqui seu login: ");
+		scanf("%s", &login);
+		
+		printf("Digite aqui sua senha: ");
+		scanf("%s", &senha);
+		
+		system("cls");
+		
+		printf("Confirme aqui seu login: ");
+		scanf("%s", &loginVerificacao);
+		
+		printf("Confirme sua senha: ");
+		scanf("%s", &senhaVerificacao);
+			
+		system("cls");
+		
+		if(strcmp(login, loginVerificacao) == 0 && strcmp(senha, senhaVerificacao) == 0){
+			printf("Seja bem vindo!");
+		} 
+}
+
+return 0;
 }
