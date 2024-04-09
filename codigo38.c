@@ -7,7 +7,7 @@ int main(){
 //Linguagem
 setlocale(LC_ALL, "portuguese");
 
-//DeclaraÁ„o de vari·veis.
+//Declara√ß√£o de vari√°veis.
 int i;
 char login[50], senha[50], loginVerificacao[50], senhaVerificacao[50];
 
