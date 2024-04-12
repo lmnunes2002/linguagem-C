@@ -10,7 +10,7 @@ int main(){
 	int i;
 	
 	for(i = 0; i < TAM; i++){
-		printf("Digite aqui o %iº elemento: ", i+1);
+		printf("Digite aqui o %iÂº elemento: ", i+1);
 		scanf("%i", &numerosOriginal[i]);
 	}
 	
@@ -22,7 +22,7 @@ int main(){
 	
 	printf("==== Exibindo Resultados ====");
 	for(i = 0; i < TAM; i++){
-		printf("\n%iº valor invertido: %i", i+1, numerosInvert[i]);
+		printf("\n%iÂº valor invertido: %i", i+1, numerosInvert[i]);
 	}
 	
 	return 0;
