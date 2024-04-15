@@ -7,15 +7,15 @@ int main(){
 	//Linguagem.
 	setlocale(LC_ALL, "portuguese");
 	
-	//DeclaraÁ„o de vari·veis.
+	//Declara√ß√£o de vari√°veis.
 	int numerosTotais = 0, numerosPositivos = 0, numerosNegativos = 0, numerosPares = 0, numerosImpares = 0, numerosZero = 0;
 	int numeros[TAM];
 	int i;
 	
-	//DefiniÁ„o de vari·veis.
-	printf("=== Pedindo informaÁıes ===\n");
+	//Defini√ß√£o de vari√°veis.
+	printf("=== Pedindo informa√ß√µes ===\n");
 	for(i = 0; i < TAM; i++){
-		printf("Digite aqui o %i∫ valor: ", i+1);
+		printf("Digite aqui o %i¬∫ valor: ", i+1);
 		scanf("%i", &numeros[i]);
 		numerosTotais++;
 		
@@ -37,12 +37,17 @@ int main(){
 	system("cls");
 	
 	//Exibindo resultados.
-	printf("=== Exibindo informaÁıes ===");
-	printf("\nN˙meros totais: %i", numerosTotais);
-	printf("\nN˙meros positivos: %i", numerosPositivos);
-	printf("\nN˙meros negativos: %i", numerosNegativos);
-	printf("\nN˙meros pares: %i", numerosPares);
-	printf("\nN˙meros Ìmpares: %i", numerosImpares);
+	printf("=== Exibindo informa√ß√µes ===");
+
+	for(i = 0; i < TAM; i++){
+		printf("\n%i¬∫ numero inserido: %i", i+1, numeros[i]);
+	}
+	
+	printf("\n\nN√∫meros totais: %i", numerosTotais);
+	printf("\nN√∫meros positivos: %i", numerosPositivos);
+	printf("\nN√∫meros negativos: %i", numerosNegativos);
+	printf("\nN√∫meros pares: %i", numerosPares);
+	printf("\nN√∫meros √≠mpares: %i", numerosImpares);
 	
 	return 0;
 }
